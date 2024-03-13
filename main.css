@@ -1,0 +1,61 @@
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+h1 {
+    margin-right: auto;
+    margin-left: 220px;
+    margin-top: auto;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-right: 220px;
+    margin-left: 0px; 
+    margin-top: -15px;
+}
+
+main {
+    max-width: 970px; /* Limitamos el ancho máximo del contenido */
+    margin: 0 auto; /* Centramos el contenido horizontalmente */
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+p {
+    width: 50%; /* Establecemos el ancho del párrafo al 50% */
+    float: left; /* Flotamos el párrafo a la izquierda */
+    margin-right: 20px; /* Agregamos un margen a la derecha para separar el párrafo de la imagen */
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+img {
+    width: 37%; /* Establecemos el ancho de la imagen al 40% */
+    float: right; /* Flotamos la imagen a la derecha */
+    height: 30rem;
+    margin-top: -3rem;
+}

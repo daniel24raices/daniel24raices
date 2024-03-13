@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
     const timerElement = document.getElementById('timer');
     let seconds = localStorage.getItem('timerSeconds') || 0;
 
@@ -13,4 +12,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize the timer display with the stored value
     timerElement.textContent = seconds;
-});

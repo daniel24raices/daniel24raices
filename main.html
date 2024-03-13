@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/e353de1a53.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -28,13 +29,23 @@
         <img src="yo.jpg" alt="A photo of myself">
       </div>
       <div class="P">
-      <h2>Projects</h2>
-      <div class="content">
-        <button class="toggle-button">Talleres Cubas</button>
-        <img class="hidden-image" src="socios.jpg" alt="An image of Talleres Cubas">
-        <p>Web-page of my father's car garage</p>
+        <h2>Projects</h2>
+        <h3 id="toggleButton"><span>→ </span>Web-page of my father's car garage</h3>
+        <div class="image-text hidden">
+            <img src="socios.jpg" alt="An image of Talleres Cubas">
+            <p>The website of my father's garage</p>
+        </div>
+    </div>
+    <div class="S">
+      <h2>Skills</h2>
+      <div class="icon-container">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-git"></i>
+          <i class="fa-brands fa-github"></i>
       </div>
-      </div>
+  </div>
     </main>
     <script src="main.js"></script>
 </body>

@@ -27,6 +27,7 @@ nav li {
     display: inline-block;
     margin-right: 10px;
     font-size: 1.2rem;
+    padding: 5px;
 }
 
 nav {
@@ -41,7 +42,7 @@ li a {
 
 li a:hover {
     color:hsl(120, 40%, 25%);
-    font-weight: bolder;
+    text-decoration:overline;
 }
 
 
@@ -62,6 +63,7 @@ li a:hover {
     line-height: 1.8rem;
     font-size: 1.2rem;
     margin-top: 0;
+    margin-bottom: 4rem;
 }
 
 .AM img {
@@ -89,20 +91,48 @@ li a:hover {
     color:hsl(120, 40%, 25%);
 }
 
- .hidden-image {
-    opacity: 0; /* La imagen estará inicialmente oculta */
-    transition: opacity 0.5s ease; /* Transición suave de la opacidad */
-    height: 0%;
-    width: 0%;
-  }
-  
- .content.open .hidden-image {
-    opacity: 1; /* La imagen se mostrará cuando el contenido esté abierto */
+.P img {
+    width: 30%; /* Establecemos el ancho de la imagen al 40% */
+    float: center; /* Flotamos la imagen a la derecha */
     height: 15rem;
-    width: 30%;
-  }
+}
 
-  /* .P img {
-    /* width: 30%;
-    height: 15rem;
-  } */
+.image-text.hidden {
+    display: none;
+}
+
+h3 {
+    margin-top: 2.2rem;
+}
+
+h3:hover{
+    font-weight: lighter;
+    color: hsl(120, 40%, 25%);
+    cursor: pointer;
+}
+
+.P span {
+    font-weight: bolder;
+    color: hsl(120, 40%, 25%);
+    font-size: 1.8rem;
+}
+
+.S {
+    max-width: 970px; /* Limitamos el ancho máximo del contenido */
+    margin: 0 auto; /* Centramos el contenido horizontalmente */
+    margin-top: 4.5rem;
+}
+
+.S h2 {
+    margin-bottom: 2.5rem;
+    font-size: 1.9rem;
+    color:hsl(120, 40%, 25%);
+  
+}
+
+.icon-container {
+    display: flex; /* Utiliza Flexbox para alinear los iconos */
+    gap: 20px; /* Añade espacio de 20px entre los iconos */
+    align-items: center;
+    font-size: 3.5rem;
+}

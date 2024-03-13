@@ -13,6 +13,7 @@
     // Initialize the timer display with the stored value
     timerElement.textContent = seconds;
 
-    document.querySelector('.toggle-button').addEventListener('click', function() {
-        document.querySelector('.content').classList.toggle('open');
-      });
+    document.getElementById("toggleButton").addEventListener("click", function() {
+        var imageText = this.nextElementSibling;
+        imageText.classList.toggle("hidden");
+    });

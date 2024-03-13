@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+h1 {
+    margin-right: auto;
+    margin-left: 250px;
+    margin-top: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-right: 250px;
+    margin-left: 0px; 
+    margin-top: -15px;
+}

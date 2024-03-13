@@ -50,10 +50,11 @@ p {
     margin-right: 20px; /* Agregamos un margen a la derecha para separar el párrafo de la imagen */
     line-height: 1.8rem;
     font-size: 1.2rem;
+    margin-top: 0;
 }
 
 img {
-    width: 35%; /* Establecemos el ancho de la imagen al 40% */
+    width: 37%; /* Establecemos el ancho de la imagen al 40% */
     float: right; /* Flotamos la imagen a la derecha */
     height: 30rem;
     margin-top: -3rem;

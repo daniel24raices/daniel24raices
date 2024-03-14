@@ -87,6 +87,7 @@ p {
     .icon-container a:visited,
     .icon-container a:active {
         color: black; /* Establece el color de los iconos y enlaces a negro */
+        overflow:hidden;
     }
 
 }
@@ -194,6 +195,7 @@ p {
         font-size: 2.5rem;
         display: inline-block;
         margin: 0 18px;
+        overflow:hidden;
     }
 
     .icon-container a:visited {

@@ -1,3 +1,5 @@
+/* CSS para pantallas de ordenador */
+
 body {
     box-sizing: border-box;
     font-size: 16px;
@@ -35,6 +37,7 @@ nav {
     margin-left: 0px; 
     margin-top: -15px;
 }
+
 li a {
     text-decoration: none;
     color:black;
@@ -47,8 +50,9 @@ li a:hover {
 
 
 .AM {
-    max-width: 970px; /* Limitamos el ancho máximo del contenido */
-    margin: 0 auto; /* Centramos el contenido horizontalmente */
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 .AM h2 {
@@ -57,9 +61,9 @@ li a:hover {
 }
 
 .AM p {
-    width: 50%; /* Establecemos el ancho del párrafo al 50% */
-    float: left; /* Flotamos el párrafo a la izquierda */
-    margin-right: 20px; /* Agregamos un margen a la derecha para separar el párrafo de la imagen */
+    width: 50%;
+    float: left;
+    margin-right: 20px;
     line-height: 1.8rem;
     font-size: 1.2rem;
     margin-top: 0;
@@ -67,33 +71,34 @@ li a:hover {
 }
 
 .AM img {
-    width: 37%; /* Establecemos el ancho de la imagen al 40% */
-    float: right; /* Flotamos la imagen a la derecha */
+    width: 37%;
+    float: right;
     height: 30rem;
     margin-top: -3rem;
 }
 
 .P {
-    clear: both; /* Limpiamos ambos lados de los elementos flotantes */
-    margin-top: 20px; /* Agregamos un margen superior para separar el elemento .P de los elementos flotantes */
-    max-width: 970px; /* Limitamos el ancho máximo del contenido */
+    clear: both;
+    margin-top: 20px;
+    max-width: 970px;
     margin: 0 auto;
- }
+    padding: 0 2%;
+}
 
- .P p {
+.P p {
     line-height: 1.8rem;
     font-size: 1.2rem;
     margin-top: 0;
- }
+}
 
- .P h2 {
+.P h2 {
     font-size: 1.9rem;
     color:hsl(120, 40%, 25%);
 }
 
 .P img {
-    width: 30%; /* Establecemos el ancho de la imagen al 40% */
-    float: center; /* Flotamos la imagen a la derecha */
+    width: 30%;
+    float: center;
     height: 15rem;
 }
 
@@ -118,9 +123,10 @@ h3:hover{
 }
 
 .S {
-    max-width: 970px; /* Limitamos el ancho máximo del contenido */
-    margin: 0 auto; /* Centramos el contenido horizontalmente */
+    max-width: 970px;
+    margin: 0 auto;
     margin-top: 4.5rem;
+    padding: 0 2%;
 }
 
 .S h2 {
@@ -131,7 +137,7 @@ h3:hover{
 }
 
 .icon-container {
-    display: flex; /* Utiliza Flexbox para alinear los iconos */
+    display: flex;
     align-items: center;
     font-size: 2.5rem;
     justify-content: space-between;
@@ -140,16 +146,65 @@ h3:hover{
 footer {
     margin-top: 2.2rem;
     padding: 1rem;
-    text-align: center; /* Centra el contenido horizontalmente */
+    text-align: center;
     font-size: 1.2rem;
 }
 
 .footer-content {
-    display: flex; /* Utiliza Flexbox para alinear los elementos */
-    align-items: center; /* Alinea los elementos verticalmente */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-content i {
-    margin: 0 5px; /* Ajusta el margen de los iconos */
+    margin: 0 5px;
+}
+
+/* Media Query para pantallas más pequeñas (tabletas y teléfonos) */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+    nav {
+        margin-right: 0;
+        text-align: center;
+    }
+    nav li {
+        display: block;
+        margin: 5px auto;
+    }
+
+    /* Ajustes de imágenes para pantallas más pequeñas */
+    .AM img,
+    .P img {
+        width: 100%;
+        height: auto;
+        margin: 20px auto; /* Espaciado alrededor de las imágenes */
+        display: block; /* Centra la imagen horizontalmente */
+    }
+
+    /* Ajustes de texto para pantallas más pequeñas */
+    .AM p {
+        width: 100%; /* Ajuste el ancho al 100% para que se centre correctamente */
+        text-align: center; /* Centra el texto */
+        margin-left: auto; /* Establece el margen izquierdo automático */
+        margin-right: auto; /* Establece el margen derecho automático */
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+
+    .P p,
+    h1 {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin-left: auto; /* Establece el margen izquierdo automático */
+        margin-right: auto; /* Establece el margen derecho automático */
+        max-width: 80%; /* Limita el ancho máximo del texto */
+    }
 }

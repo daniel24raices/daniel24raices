@@ -11,16 +11,16 @@
     <header>
       <nav>
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#about_me" onclick="smoothScroll('about_me')">About Me</a></li>
+            <li><a href="#projects" onclick="smoothScroll('projects')">Projects</a></li>
+            <li><a href="#skills" onclick="smoothScroll('skills')">Skills</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <h1>Daniel Raices</h1>
     </header>
     <main>
-      <div class="AM">
+      <div class="AM" id="about_me">
       <h2>About Me</h2>
       <p>I am Daniel Raices. Born in 1993 in Caracas, Venezuela. Currently based in Madrid, Spain.<br>
         <br>I am a professional translator, Spanish is my mother tongue and I also speak English, French, and Italian.<br>
@@ -28,7 +28,7 @@
         <br>Fun fact! You have spent <span id="timer">0</span> seconds on this website so far!</p>
         <img src="yo.jpg" alt="A photo of myself">
       </div>
-      <div class="P">
+      <div class="P" id="projects">
         <h2>Projects</h2>
         <h3 id="toggleButton"><span>→ </span>Web-page of my father's car garage</h3>
         <div class="image-text hidden">
@@ -36,7 +36,7 @@
             <p>Talleres Cubas</p>
         </div>
     </div>
-    <div class="S">
+    <div class="S" id="skills">
       <h2>Skills</h2>
       <div class="icon-container">
           <i class="fa-brands fa-html5"></i>
@@ -47,7 +47,6 @@
       </div>
   </div>
     </main>
-    <script src="main.js"></script>
     <footer>
       <div class="footer-content">
           <p>Made with</p>
@@ -55,5 +54,6 @@
           <p>in Madrid</p>
       </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,8 +1,25 @@
+* {
+    overflow-x: hidden;
+}
+
 body {
     box-sizing: border-box;
     font-size: 16px;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal en todos los tamaños de pantalla */
 }
+
+h1, h2, h3, h4, h5, h6,
+nav a {
+    font-family: "Almarai", sans-serif;
+    font-weight: 700; /* Cambiar según el peso deseado */
+    font-style: normal;
+}
+
+p {
+    font-family: "Almarai", sans-serif;
+    font-weight: 400; /* Cambiar según el peso deseado */
+    font-style: normal;
+}
+
 
 /* CSS para pantallas de tamaño pequeño (smartphones y tablets) */
 
@@ -25,19 +42,22 @@ body {
     }
 
     nav {
-        margin: 0;
+        width: 100%;
+        position: relative;
+        text-align: center; /* Centra el contenido del menú */
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente del menú */
     }
 
     nav ul {
-        list-style-type: none;
-        padding: 0;
-        white-space: nowrap; /* Evita el salto de línea de los elementos de la lista */
+        width: auto; /* Ancho automático para adaptarse al contenido */
+        display: block; /* Cambia el tipo de visualización para mostrar los elementos en forma vertical */
+        margin: 0 auto; /* Centra la lista de elementos */
+        padding: 0; /* Elimina el rellado para centrar */
     }
 
     nav li {
-        display: inline-block;
-        text-align: center;
-        margin: 0 5px;
+        display: block; /* Cambia el tipo de visualización de los elementos de lista */
+        margin: 10px 0; /* Añade espacio entre los elementos de lista */
     }
 
     .C p {
@@ -67,8 +87,24 @@ body {
     .icon-container a:visited,
     .icon-container a:active {
         color: black; /* Establece el color de los iconos y enlaces a negro */
+        overflow:hidden;
+    }
+
+}
+
+
+/* CSS para pantallas de tamaño mediano (tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav ul {
+        text-align: center; /* Centra los elementos del menú */
+    }
+
+    nav li {
+        display: inline-block; /* Muestra los elementos de lista en línea */
+        margin: 0 10px; /* Añade un margen entre los elementos de lista */
     }
 }
+
 
 /* CSS para pantallas de tamaño grande (ordenadores y portátiles) */
 @media screen and (min-width: 769px) {
@@ -159,6 +195,7 @@ body {
         font-size: 2.5rem;
         display: inline-block;
         margin: 0 18px;
+        overflow:hidden;
     }
 
     .icon-container a:visited {

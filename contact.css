@@ -1,4 +1,4 @@
-body {
+/* body {
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -52,4 +52,202 @@ li a {
 li a:hover {
     color:hsl(120, 40%, 25%);
     text-decoration:overline;
+}
+
+.C {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.C h2 {
+    font-size: 1.9rem;
+    color:hsl(120, 40%, 25%);
+}
+
+.C p {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.icon-container {
+    text-align: left; /* Centra los elementos horizontalmente 
+    margin-top: 10px; /* Ajusta el margen superior 
+    clear: both;
+}
+
+.icon-container i {
+    font-size: 2.5rem; /* Tamaño de los iconos 
+    display: inline-block; /* Hace que los iconos se muestren en línea 
+    margin: 0 18px; /* Espaciado horizontal entre los iconos 
+}
+
+.icon-container a:visited {
+    color: inherit; /* El color de los enlaces visitados será el mismo que el color del texto normal 
+} */
+
+
+/* CSS para pantallas de tamaño pequeño (smartphones y tablets) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        white-space: nowrap; /* Evita el salto de línea de los elementos de la lista */
+    }
+
+    nav li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+    }
+
+    .C p {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .icon-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .icon-container i {
+        font-size: 3rem; /* Tamaño más grande para iconos en dispositivos móviles */
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    /* Evitar cambio de color al hacer clic en los iconos */
+    .icon-container i,
+    .icon-container a:visited {
+        color: black; /* El color de los enlaces visitados será el mismo que el color del texto normal */
+    }
+
+    .icon-container a:active {
+        color: black; /* El color de los enlaces activos será el mismo que el color del texto normal */
+    }
+}
+
+/* CSS para pantallas de tamaño grande (ordenadores y portátiles) */
+@media screen and (min-width: 769px) {
+    body {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        flex-direction: row-reverse;
+    } 
+
+    header a {
+        text-decoration: none;
+        color:black;
+    }
+
+    header a:hover {
+        color:hsl(120, 40%, 25%);
+    }
+
+    h1 {
+        margin-right: auto;
+        margin-left: 220px;
+        margin-top: auto;
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    nav {
+        margin-right: 220px;
+        margin-left: 0px; 
+        margin-top: -15px;
+    }
+    li a {
+        text-decoration: none;
+        color:black;
+    }
+
+    li a:hover {
+        color:hsl(120, 40%, 25%);
+        text-decoration:overline;
+    }
+
+    .C {
+        max-width: 970px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    .C h2 {
+        font-size: 1.9rem;
+        color:hsl(120, 40%, 25%);
+    }
+
+    .C p {
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .icon-container {
+        text-align: left;
+        margin-top: 10px;
+        clear: both;
+    }
+
+    .icon-container i {
+        font-size: 2.5rem;
+        display: inline-block;
+        margin: 0 18px;
+    }
+
+    .icon-container a:visited {
+        color: inherit;
+    }
 }

@@ -1,4 +1,11 @@
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal en todos los tamaños de pantalla */
+}
+
 /* CSS para pantallas de tamaño pequeño (smartphones y tablets) */
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -40,6 +47,10 @@
         text-align: center;
     }
 
+    .C h2 {
+        color: hsl(120, 40%, 25%); /* Mantiene el mismo color del h2 en ordenadores */
+    }
+
     .icon-container {
         text-align: center;
         margin-top: 20px;
@@ -53,12 +64,9 @@
 
     /* Evitar cambio de color al hacer clic en los iconos */
     .icon-container i,
-    .icon-container a:visited {
-        color: black; /* El color de los enlaces visitados será el mismo que el color del texto normal */
-    }
-
+    .icon-container a:visited,
     .icon-container a:active {
-        color: black; /* El color de los enlaces activos será el mismo que el color del texto normal */
+        color: black; /* Establece el color de los iconos y enlaces a negro */
     }
 }
 
